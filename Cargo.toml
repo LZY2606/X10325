@@ -1,0 +1,15 @@
+[package]
+name = "squashfs-audit"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.98"
+description = "Read-only SquashFS image reference and provenance auditor"
+license = "MIT"
+
+[[bin]]
+name = "squashfs-audit"
+path = "src/main.rs"
+
+[profile.release]
+lto = true
+strip = true
